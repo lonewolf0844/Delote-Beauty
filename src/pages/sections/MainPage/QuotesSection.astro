@@ -1,0 +1,173 @@
+---
+import ImageWrap from "../../../components/ImageWrap.astro";
+
+---
+
+<section class="quotes">
+  <div class="container">
+    <div class="wrapper">
+      <img src="src/assets/icons/quots.svg" alt="icon" />
+      <p class="text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In arcu nibh
+        vitae amet. Ipsum, pharetra donec ornare velit. Id at quisque accumsan
+        risus ac ipsum ut. Sit elit, facilisi proin non malesuada sociis
+        tristique. Viverra augue lorem ut quisque quam tortor, malesuada
+        iaculis.
+      </p>
+      <p class="text">
+        Et elementum at nulla venenatis, faucibus integer. Auctor neque eros,
+        viverra rutrum. Fames ultrices condimentum tortor nec penatibus. Velit
+        imperdiet sapien fringilla vestibulum sit fames.
+      </p>
+    </div>
+    <div class="services">
+      <div class="card">
+       
+					<ImageWrap height="320px">
+          <img src="src/assets/images/services-1.jpg" alt="" />
+				</ImageWrap>
+        
+        <h3 class="title">Парикмахерские услуги</h3>
+      </div>
+      <div class="card">
+				<ImageWrap height="320px">
+          <img src="src/assets/images/services-2.jpg" alt="" />
+				</ImageWrap>
+        <h3 class="title">Маникюр</h3>
+      </div>
+      <div class="card">
+				<ImageWrap height="320px">
+          <img src="src/assets/images/services-3.jpg" alt="" />
+				</ImageWrap>
+        <h3 class="title">Педикюр</h3>
+      </div>
+    </div>
+    <div class="services-2">
+      <div class="card">
+				<ImageWrap height="320px">
+          <img src="src/assets/images/services-4.jpg" alt="" />
+				</ImageWrap>
+        <h3 class="title">Косметология</h3>
+      </div>
+      <div class="card">
+				<ImageWrap height="320px">
+          <img src="src/assets/images/services-5.jpg" alt="" />
+				</ImageWrap>
+        <h3 class="title">Эстетист по телу</h3>
+      </div>
+      <div class="card">
+				<ImageWrap height="320px">
+          <img src="src/assets/images/services-6.jpg" alt="" />
+				</ImageWrap>
+        <h3 class="title">Визаж</h3>
+      </div>
+    </div>
+		<div class="logo-img">
+			<div class="img">
+				<img src="src/assets/images/partner-1.png" alt="">
+			</div>
+			<div class="img-2">
+				<img src="src/assets/images/partner-2.png" alt="">
+			</div>
+			<div class="img-3">
+				<img src="src/assets/images/partner-3.png" alt="">
+			</div>
+			<div class="img-4">
+				<img src="src/assets/images/partner-4.png" alt="">
+			</div>
+		</div>
+  </div>
+</section>
+<style lang="scss">
+  .quotes {
+    padding: 100px 0px;
+    .container {
+      .wrapper {
+        max-width: 856px;
+        text-align: center;
+        margin: 0 auto;
+        .text {
+          font-weight: 700;
+          font-size: 27px;
+          line-height: 130%;
+
+          text-align: center;
+
+          color: #ffffff;
+          margin-top: 60px;
+        }
+      }
+      .services {
+        display: flex;
+        gap: 60px 20px;
+				margin: 80px 0px;
+				justify-content: space-between;
+        .card {
+         width: 100%;
+				 min-width: 416px;
+				 min-width: 350px;
+          .title {
+            font-family: "Garamond";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 120%;
+           margin-top: 30px;
+            color: #ffffff;
+          }
+        }
+      }
+      .services-2 {
+        display: flex;
+        gap: 60px 20px;
+				margin: 80px 0px;
+				justify-content: space-between;
+        .card {
+         width: 100%;
+				 min-width: 416px;
+				 min-width: 350px;
+          .title {
+            font-family: "Garamond";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 120%;
+
+            margin-top: 30px;
+            color: #ffffff;
+						
+          }
+        }
+      }
+    }
+		.logo-img{
+			display: flex;
+			justify-content: space-around;
+			margin: 168px 0px;
+			.img{
+				width: 69px;
+				img{
+         width: 100%;
+				}
+			}
+			.img-2{
+				width: 90px;
+				img{
+         width: 100%;
+				}
+			}
+			.img-3{
+				width: 190px;
+				img{
+         width: 100%;
+				}
+			}
+			.img-4{
+				width:110px;
+				img{
+         width: 100%;
+				}
+			}
+		}
+  }
+</style>

@@ -1,0 +1,104 @@
+---
+import ImageWrap from "../../../components/ImageWrap.astro";
+import Title from "../../../components/Title.astro";
+---
+
+<section class="our-masters">
+  <div class="container">
+    <Title>Наши Мастера</Title>
+    <div class="wrapper">
+
+			<!-- card -->
+      <div class="card">
+        <!-- component -->
+        <ImageWrap height="500px">
+          <img src="src/assets/images/master-1.jpg" alt="" />
+        </ImageWrap>
+
+        <h3 class="title">Елена Васильевна</h3>
+        <p class="job">Визажист</p>
+      </div>
+			<!-- card -->
+      <div class="card">
+        <!-- component -->
+        <ImageWrap height="500px">
+          <img src="src/assets/images/master-2.jpg" alt="" />
+        </ImageWrap>
+
+        <h3 class="title">Елена Васильевна</h3>
+        <p class="job">Визажист</p>
+      </div>
+			<!-- card -->
+      <div class="card">
+        <!-- component -->
+        <ImageWrap height="500px">
+          <img src="src/assets/images/master-1.jpg" alt="" />
+        </ImageWrap>
+
+        <h3 class="title">Елена Васильевна</h3>
+        <p class="job">Визажист</p>
+      </div>
+			<!-- card -->
+      <div class="card">
+        <!-- component -->
+        <ImageWrap height="500px">
+          <img src="src/assets/images/master-3.jpg" alt="" />
+        </ImageWrap>
+
+        <h3 class="title">Елена Васильевна</h3>
+        <p class="job">Визажист</p>
+      </div>
+			<!-- card -->
+      <div class="card">
+        <!-- component -->
+        <ImageWrap height="500px">
+          <img src="src/assets/images/master-4.jpg" alt="" />
+        </ImageWrap>
+
+        <h3 class="title">Елена Васильевна</h3>
+        <p class="job">Визажист</p>
+      </div>
+			<!-- card -->
+      <div class="card">
+        <!-- component -->
+        <ImageWrap height="500px">
+          <img src="src/assets/images/master-5.jpg" alt="" />
+        </ImageWrap>
+
+        <h3 class="title">Елена Васильевна</h3>
+        <p class="job">Визажист</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<style is:global lang="scss">
+  @import "src/assets/styles/utils/var.scss";
+  .our-masters {
+    padding: 180px 0px 100px;
+    min-height: 100vh;
+    .container {
+      .wrapper {
+        margin-top: 80px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				gap: 60px 20px;
+        .card {
+					width: 100%;
+          max-width: 416px;
+					min-width: 350px;
+          .title {
+            font-size: 27px;
+            font-weight: 700;
+            width: 416px;
+            text-align: left;
+            margin: 30px 0px 10px;
+          }
+          .job {
+          }
+        }
+      }
+    }
+  }
+</style>
